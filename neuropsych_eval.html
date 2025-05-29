@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neuropsychological Evaluations - SCCFC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .cta-button { transition: all 0.3s ease; }
+        .cta-button:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #888; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #555; }
+        #mobile-menu { transition: transform 0.3s ease-in-out; }
+        .content-section { padding-top: 4rem; padding-bottom: 4rem; } /* Equivalent to py-16 */
+        @media (min-width: 768px) { .content-section { padding-top: 6rem; padding-bottom: 6rem; } } /* Equivalent to md:py-24 */
+        .breadcrumb a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-blue-600">
+                <i class="fas fa-hands-helping mr-2"></i>SCCFC
+            </a>
+            <nav class="hidden md:flex space-x-4 items-center">
+                <a href="index.html" class="text-gray-600 hover:text-blue-600 transition duration-300 px-2 py-1">Home</a>
+                <a href="index.html#about" class="text-gray-600 hover:text-blue-600 transition duration-300 px-2 py-1">About Us</a>
+                <a href="index.html#services" class="text-gray-600 hover:text-blue-600 transition duration-300 px-2 py-1">Our Services</a>
+                <a href="why_testing.html" class="text-gray-600 hover:text-blue-600 transition duration-300 px-2 py-1">Why Testing?</a>
+                <a href="our_doctors.html" class="text-gray-600 hover:text-blue-600 transition duration-300 px-2 py-1">Our Doctors</a>
+                <a href="index.html#contact" class="text-gray-600 hover:text-blue-600 transition duration-300 px-2 py-1">Contact</a>
+                <a href="tel:+14017891553" class="text-sm text-blue-600 border border-blue-600 px-3 py-2 rounded-full hover:bg-blue-600 hover:text-white transition duration-300">
+                    <i class="fas fa-phone-alt mr-1"></i> (401) 789-1553
+                </a>
+            </nav>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                    <i class="fas fa-bars fa-lg"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden bg-white shadow-lg absolute top-full left-0 right-0 transform -translate-y-full opacity-0 -z-10">
+             <a href="index.html" class="block px-6 py-3 text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition duration-300 mobile-menu-link">Home</a>
+             <a href="index.html#about" class="block px-6 py-3 text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition duration-300 mobile-menu-link">About Us</a>
+             <a href="index.html#services" class="block px-6 py-3 text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition duration-300 mobile-menu-link">Our Services</a>
+             <a href="neuropsych_eval.html" class="block px-6 py-3 text-gray-600 bg-blue-50 text-blue-700 font-semibold transition duration-300 mobile-menu-link">Neuropsychological Evaluations</a>
+             <a href="educational_eval.html" class="block px-6 py-3 text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition duration-300 mobile-menu-link">Educational Testing</a>
+             <a href="why_testing.html" class="block px-6 py-3 text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition duration-300 mobile-menu-link">Why Testing?</a>
+             <a href="our_doctors.html" class="block px-6 py-3 text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition duration-300 mobile-menu-link">Our Doctors</a>
+             <a href="index.html#contact" class="block px-6 py-3 text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition duration-300 mobile-menu-link">Contact</a>
+             <a href="tel:+14017891553" class="block px-6 py-3 text-blue-600 hover:bg-blue-500 hover:text-white transition duration-300 mobile-menu-link">
+                <i class="fas fa-phone-alt mr-1"></i> (401) 789-1553
+             </a>
+        </div>
+    </header>
+
+    <main class="content-section container mx-auto px-6">
+        <nav class="text-sm mb-8 breadcrumb" aria-label="Breadcrumb">
+            <ol class="list-none p-0 inline-flex">
+                <li class="flex items-center">
+                    <a href="index.html" class="text-blue-600 hover:text-blue-700">Home</a>
+                    <i class="fas fa-angle-right mx-2 text-gray-500"></i>
+                </li>
+                <li class="flex items-center">
+                    <a href="index.html#services" class="text-blue-600 hover:text-blue-700">Our Services</a>
+                    <i class="fas fa-angle-right mx-2 text-gray-500"></i>
+                </li>
+                <li class="text-gray-500" aria-current="page">Neuropsychological Evaluations</li>
+            </ol>
+        </nav>
+
+        <article class="bg-white p-8 md:p-12 rounded-lg shadow-xl">
+            <header class="mb-8 text-center">
+                <i class="fas fa-brain text-blue-500 text-6xl mb-6"></i>
+                <h1 class="text-3xl md:text-4xl font-bold text-blue-700 mb-4">Understanding Neuropsychological Evaluations</h1>
+                <p class="text-lg text-gray-600">A comprehensive look at brain-behavior relationships.</p>
+            </header>
+
+            <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+                <p>A neuropsychological evaluation is a comprehensive assessment of cognitive and behavioral functions using a set of standardized tests and procedures. These evaluations are typically recommended when there are concerns about an individual's thinking skills, behavior, or emotional functioning, often due to known or suspected brain injury, developmental disorders, neurological conditions, or psychiatric illness.</p>
+
+                <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">What Does the Evaluation Assess?</h2>
+                <p>Neuropsychological evaluations assess a wide range of cognitive domains, including:</p>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li><strong>Intellectual Functioning (IQ):</strong> Overall cognitive ability.</li>
+                    <li><strong>Attention and Concentration:</strong> The ability to focus, sustain, and shift attention.</li>
+                    <li><strong>Learning and Memory:</strong> How new information is acquired, stored, and retrieved (both verbal and visual).</li>
+                    <li><strong>Executive Functions:</strong> Higher-level skills such as planning, organizing, problem-solving, decision-making, working memory, and mental flexibility.</li>
+                    <li><strong>Language Skills:</strong> Understanding and expressing language, including verbal fluency and comprehension.</li>
+                    <li><strong>Visuospatial Skills:</strong> The ability to perceive and manipulate visual information and understand spatial relationships.</li>
+                    <li><strong>Motor Functions:</strong> Fine motor speed and dexterity.</li>
+                    <li><strong>Emotional and Behavioral Functioning:</strong> Assessment of mood, anxiety, social skills, and behavior patterns.</li>
+                </ul>
+
+                <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">What is the Process Like?</h2>
+                <p>The evaluation process typically involves several steps:</p>
+                <ol class="list-decimal pl-6 space-y-2">
+                    <li><strong>Initial Interview:</strong> A detailed discussion with the individual (and/or parents/guardians) to gather background information, understand current concerns, and review relevant medical, psychological, and educational records.</li>
+                    <li><strong>Testing Sessions:</strong> One or more sessions of face-to-face testing. The duration varies depending on the referral questions and the individual's needs. Tests involve a variety of tasks, such as answering questions, solving puzzles, drawing, and memory tasks.</li>
+                    <li><strong>Scoring and Interpretation:</strong> After testing, the neuropsychologist scores the tests and interprets the results in the context of the individual's background and current functioning.</li>
+                    <li><strong>Feedback Session:</strong> The neuropsychologist meets with the individual (and/or family) to discuss the findings, provide diagnostic clarification, and offer tailored recommendations.</li>
+                    <li><strong>Written Report:</strong> A comprehensive written report is provided, summarizing the evaluation findings and recommendations. This report can be shared with other professionals (e.g., doctors, therapists, schools) with appropriate consent.</li>
+                </ol>
+
+                <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">How Can the Results Help?</h2>
+                <p>The results of a neuropsychological evaluation can:</p>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li>Provide diagnostic clarity for conditions like ADHD, Autism Spectrum Disorder, learning disabilities, and effects of concussion or other neurological conditions.</li>
+                    <li>Identify cognitive strengths and weaknesses to inform treatment planning.</li>
+                    <li>Guide educational or vocational planning and accommodations (e.g., IEP/504 plans).</li>
+                    <li>Help in developing strategies to manage cognitive, emotional, or behavioral difficulties.</li>
+                    <li>Monitor changes in functioning over time.</li>
+                </ul>
+                <p class="mt-6">If you have concerns about your child's development or functioning, a neuropsychological evaluation can provide valuable insights. Please <a href="index.html#contact" class="text-blue-600 hover:underline">contact us</a> to learn more or to schedule a consultation.</p>
+            </div>
+        </article>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 py-12 mt-16 md:mt-24">
+        <div class="container mx-auto px-6 text-center">
+            <div class="mb-6">
+                <a href="index.html" class="text-xl font-bold text-white hover:text-blue-400 transition duration-300">South County Child & Family Consultants</a>
+            </div>
+            <nav class="mb-6 space-x-4 md:space-x-6">
+                <a href="index.html" class="hover:text-blue-400 transition duration-300">Home</a>
+                <a href="index.html#about" class="hover:text-blue-400 transition duration-300">About</a>
+                <a href="index.html#services" class="hover:text-blue-400 transition duration-300">Services</a>
+                <a href="why_testing.html" class="hover:text-blue-400 transition duration-300">Why Testing?</a>
+                <a href="our_doctors.html" class="hover:text-blue-400 transition duration-300">Our Doctors</a>
+                <a href="index.html#contact" class="hover:text-blue-400 transition duration-300">Contact</a>
+            </nav>
+            <div class="mb-6">
+                <p>1058 Kingstown Rd, Wakefield, RI 02879</p>
+                <p>Phone: (401) 789-1553 | Fax: (401) 782-1313</p>
+            </div>
+            <div class="text-sm text-gray-500">
+                © <span id="currentYear"></span> South County Child & Family Consultants. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            const isHidden = mobileMenu.classList.contains('-translate-y-full');
+            if (isHidden) {
+                mobileMenu.classList.remove('-translate-y-full', 'opacity-0', '-z-10');
+                mobileMenu.classList.add('translate-y-0', 'opacity-100', 'z-40');
+                mobileMenuButton.innerHTML = '<i class="fas fa-times fa-lg"></i>';
+            } else {
+                mobileMenu.classList.add('-translate-y-full', 'opacity-0', '-z-10');
+                mobileMenu.classList.remove('translate-y-0', 'opacity-100', 'z-40');
+                mobileMenuButton.innerHTML = '<i class="fas fa-bars fa-lg"></i>';
+            }
+        });
+        document.querySelectorAll('#mobile-menu .mobile-menu-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('-translate-y-full', 'opacity-0', '-z-10');
+                mobileMenu.classList.remove('translate-y-0', 'opacity-100', 'z-40');
+                mobileMenuButton.innerHTML = '<i class="fas fa-bars fa-lg"></i>';
+            });
+        });
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Smooth scroll for anchor links on the same page (if any)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                // Check if the link is to an element on the *current* page
+                if (window.location.pathname === this.pathname || '/' + window.location.pathname === this.pathname) {
+                    const targetElement = document.querySelector(this.getAttribute('href'));
+                    if (targetElement) {
+                        e.preventDefault();
+                        const headerOffset = 70; // Adjust as needed for sticky header
+                        const elementPosition = targetElement.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: "smooth"
+                        });
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>South County Child & Family Consultants - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background-image: url('https://placehold.co/1920x1080/a0aec0/ffffff?text=Calm+Supportive+Environment'); /* Placeholder Hero Image */
+            background-size: cover;
+            background-position: center;
+        }
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        .service-card-link:hover .service-card { /* Apply hover to card when link is hovered */
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+        .service-card { /* Added for individual card transition if not wrapped by link */
+             transition: all 0.3s ease;
+        }
+        .testimonial-card {
+            background-color: #f0f9ff;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+        #mobile-menu {
+            transition: transform 0.3s ease-in-out;
+        }
+        .content-section { /* For consistent padding for new pages */
+            padding-top: 4rem; /* 64px */
+            padding-bottom: 4rem; /* 64px */
+        }
+        @media (min-width: 768px) {
+            .content-section {
+                padding-top: 6rem; /* 96px */
+                padding-bottom: 6rem; /* 96px */
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-blue-600">
+                <i class="fas fa-hands-helping mr-2"></i>SCCFC
+            </a>
+            <nav class="hidden md:flex space-x-4 items-center">
+                <a href="index.html" class="text-gray-600 hover:text-blue-600 transition duration-300 px-2 py-1">Home</a>
+                <a href="index.html#about" class="text-gray-600 hover:text-blue-600 transition duration-300 px-2 py-1">About Us</a>
+                <a href="index.html#services" class="text-gray-600 hover:text-blue-600 transition duration-300 px-2 py-1">Our Services</a>
+                <a href="why_testing.html" class="text-gray-600 hover:text-blue-600 transition duration-300 px-2 py-1">Why Testing?</a>
+                <a href="our_doctors.html" class="text-gray-600 hover:text-blue-600 transition duration-300 px-2 py-1">Our Doctors</a>
+                <a href="index.html#contact" class="text-gray-600 hover:text-blue-600 transition duration-300 px-2 py-1">Contact</a>
+                <a href="tel:+14017891553" class="text-sm text-blue-600 border border-blue-600 px-3 py-2 rounded-full hover:bg-blue-600 hover:text-white transition duration-300">
+                    <i class="fas fa-phone-alt mr-1"></i> (401) 789-1553
+                </a>
+            </nav>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                    <i class="fas fa-bars fa-lg"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden bg-white shadow-lg absolute top-full left-0 right-0 transform -translate-y-full opacity-0 -z-10">
+             <a href="index.html" class="block px-6 py-3 text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition duration-300 mobile-menu-link">Home</a>
+             <a href="index.html#about" class="block px-6 py-3 text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition duration-300 mobile-menu-link">About Us</a>
+             <a href="index.html#services" class="block px-6 py-3 text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition duration-300 mobile-menu-link">Our Services</a>
+             <a href="neuropsych_eval.html" class="block px-6 py-3 text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition duration-300 mobile-menu-link">Neuropsychological Evaluations</a>
+             <a href="educational_eval.html" class="block px-6 py-3 text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition duration-300 mobile-menu-link">Educational Testing</a>
+             <a href="why_testing.html" class="block px-6 py-3 text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition duration-300 mobile-menu-link">Why Testing?</a>
+             <a href="our_doctors.html" class="block px-6 py-3 text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition duration-300 mobile-menu-link">Our Doctors</a>
+             <a href="index.html#contact" class="block px-6 py-3 text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition duration-300 mobile-menu-link">Contact</a>
+             <a href="tel:+14017891553" class="block px-6 py-3 text-blue-600 hover:bg-blue-500 hover:text-white transition duration-300 mobile-menu-link">
+                <i class="fas fa-phone-alt mr-1"></i> (401) 789-1553
+             </a>
+        </div>
+    </header>
+
+    <section id="home" class="hero-bg text-white py-20 md:py-32">
+        <div class="container mx-auto px-6 text-center bg-black bg-opacity-40 p-8 md:p-12 rounded-lg">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">Compassionate Support for Children & Families</h1>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+                Providing expert psychological evaluations to help your family thrive. We offer a safe, nurturing environment for growth and understanding.
+            </p>
+            <a href="index.html#contact" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-8 rounded-full text-lg cta-button inline-flex items-center">
+                Request an Appointment <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <section id="about" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-700 mb-4">About South County Child & Family Consultants</h2>
+                <p class="text-gray-600 text-lg max-w-3xl mx-auto">
+                    Since our founding, we have been dedicated to offering comprehensive psychological evaluations tailored to the unique needs of children, adolescents, and their families in South County and surrounding areas.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://placehold.co/600x400/d1e9ff/3b82f6?text=Our+Welcoming+Office" alt="Welcoming office environment" class="rounded-lg shadow-xl w-full h-auto">
+                </div>
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-semibold text-gray-700">Our Mission & Approach</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Our mission is to provide high-quality, evidence-based psychological services in a supportive and confidential setting. We believe in a collaborative approach, working closely with families, schools, and other professionals to ensure the best possible outcomes.
+                    </p>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i> Individualized assessment plans.</li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i> Experienced and compassionate clinicians.</li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i> Focus on strengths and actionable recommendations.</li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i> Commitment to confidentiality and ethical practice.</li>
+                    </ul>
+                    <div class="mt-8">
+                         <a href="our_doctors.html" class="text-blue-600 hover:text-blue-700 font-semibold inline-flex items-center">
+                            Meet Our Doctors <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-16 md:py-24 bg-blue-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-700 mb-4">Our Specialized Evaluation Services</h2>
+                <p class="text-gray-600 text-lg max-w-3xl mx-auto">
+                    We provide expert evaluations to understand and support your child's unique learning and developmental profile. Click to learn more.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <a href="neuropsych_eval.html" class="service-card-link group">
+                    <div class="bg-white p-8 rounded-xl shadow-lg service-card flex flex-col items-center text-center h-full">
+                        <div class="text-blue-500 text-5xl mb-6"><i class="fas fa-brain"></i></div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Neuropsychological Evaluations</h3>
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            Comprehensive assessments of cognitive, emotional, and behavioral functioning.
+                        </p>
+                        <span class="mt-auto text-blue-600 group-hover:text-blue-700 font-semibold">Learn More <i class="fas fa-arrow-right ml-1"></i></span>
+                    </div>
+                </a>
+                <a href="educational_eval.html" class="service-card-link group">
+                    <div class="bg-white p-8 rounded-xl shadow-lg service-card flex flex-col items-center text-center h-full">
+                        <div class="text-blue-500 text-5xl mb-6"><i class="fas fa-graduation-cap"></i></div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Educational Testing</h3>
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            Focused assessments to identify specific learning strengths and weaknesses.
+                        </p>
+                        <span class="mt-auto text-blue-600 group-hover:text-blue-700 font-semibold">Learn More <i class="fas fa-arrow-right ml-1"></i></span>
+                    </div>
+                </a>
+            </div>
+            <div class="text-center mt-12">
+                <a href="why_testing.html" class="text-lg text-blue-600 hover:text-blue-700 font-semibold inline-flex items-center">
+                    Why Might My Child Need Testing? <i class="fas fa-question-circle ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-700 mb-4">Why Choose SCCFC?</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="p-6">
+                    <div class="bg-blue-100 text-blue-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6 text-2xl">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Experienced Professionals</h3>
+                    <p class="text-gray-600 text-sm">Our team consists of highly trained and licensed psychologists.</p>
+                </div>
+                <div class="p-6">
+                    <div class="bg-green-100 text-green-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6 text-2xl">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Child & Family-Centered</h3>
+                    <p class="text-gray-600 text-sm">We tailor our approach to meet the unique needs of your child and family.</p>
+                </div>
+                <div class="p-6">
+                    <div class="bg-purple-100 text-purple-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6 text-2xl">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Confidential & Safe</h3>
+                    <p class="text-gray-600 text-sm">We provide a secure, supportive, and confidential environment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 md:py-24 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-700 mb-4">What Our Families Say</h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="testimonial-card p-8 rounded-lg shadow-md">
+                    <p class="text-gray-700 italic mb-6">"The neuropsychological evaluation provided us with so much clarity and a real path forward for our daughter. The team at SCCFC was thorough and incredibly supportive."</p>
+                    <div class="flex items-center">
+                        <img src="https://placehold.co/50x50/a0aec0/ffffff?text=S.B." alt="Parent avatar" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <p class="font-semibold text-gray-800">- S. Brown</p>
+                            <p class="text-sm text-gray-500">Wakefield, RI</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card p-8 rounded-lg shadow-md">
+                    <p class="text-gray-700 italic mb-6">"Understanding my son's learning challenges through the educational testing was a game-changer. SCCFC explained everything clearly and helped us advocate for him at school."</p>
+                    <div class="flex items-center">
+                        <img src="https://placehold.co/50x50/a0aec0/ffffff?text=L.G." alt="Parent avatar" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <p class="font-semibold text-gray-800">- L. Green</p>
+                            <p class="text-sm text-gray-500">Charlestown, RI</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-700 mb-4">Get In Touch</h2>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                    We are here to help. Reach out to schedule an appointment or learn more about our specialized evaluations.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-start">
+                <form action="#" method="POST" class="space-y-6 bg-gray-50 p-8 rounded-lg shadow-lg">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                        <input type="text" name="name" id="name" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                        <input type="email" name="email" id="email" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                    </div>
+                    <div>
+                        <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number (Optional)</label>
+                        <input type="tel" name="phone" id="phone" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                    </div>
+                     <div>
+                        <label for="service_interest" class="block text-sm font-medium text-gray-700">Service of Interest</label>
+                        <select id="service_interest" name="service_interest" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                            <option>General Inquiry</option>
+                            <option>Neuropsychological Evaluations</option>
+                            <option>Educational Testing</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                        <textarea name="message" id="message" rows="4" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-md cta-button">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Contact Information</h3>
+                        <p class="text-gray-600 mb-2"><i class="fas fa-map-marker-alt mr-2 text-blue-500"></i> 1058 Kingstown Rd, Wakefield, RI 02879</p>
+                        <p class="text-gray-600 mb-2"><i class="fas fa-phone-alt mr-2 text-blue-500"></i> <a href="tel:+14017891553" class="hover:text-blue-600">(401) 789-1553</a></p>
+                        <p class="text-gray-600 mb-2"><i class="fas fa-fax mr-2 text-blue-500"></i> (401) 782-1313 (Fax)</p>
+                        <p class="text-gray-600"><i class="fas fa-envelope mr-2 text-blue-500"></i> <a href="mailto:evals@sccfc.com" class="hover:text-blue-600">evals@sccfc.com</a></p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Office Hours</h3>
+                        <p class="text-gray-600">Monday - Friday: 9:00 AM - 5:00 PM</p>
+                        <p class="text-gray-600">Evenings & Weekends: By Appointment</p>
+                    </div>
+                    <div class="h-64 md:h-80 rounded-lg shadow-lg overflow-hidden">
+                        <iframe
+                            src="https://maps.google.com/maps?q=1058%20Kingstown%20Rd%2C%20Wakefield%2C%20RI%2002879&t=&z=15&ie=UTF8&iwloc=&output=embed" /* More specific map embed */
+                            width="100%"
+                            height="100%"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="SCCFC Location Map">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-gray-300 py-12">
+        <div class="container mx-auto px-6 text-center">
+            <div class="mb-6">
+                <a href="index.html" class="text-xl font-bold text-white hover:text-blue-400 transition duration-300">South County Child & Family Consultants</a>
+            </div>
+            <nav class="mb-6 space-x-4 md:space-x-6">
+                <a href="index.html" class="hover:text-blue-400 transition duration-300">Home</a>
+                <a href="index.html#about" class="hover:text-blue-400 transition duration-300">About</a>
+                <a href="index.html#services" class="hover:text-blue-400 transition duration-300">Services</a>
+                <a href="why_testing.html" class="hover:text-blue-400 transition duration-300">Why Testing?</a>
+                <a href="our_doctors.html" class="hover:text-blue-400 transition duration-300">Our Doctors</a>
+                <a href="index.html#contact" class="hover:text-blue-400 transition duration-300">Contact</a>
+            </nav>
+            <div class="mb-6">
+                <p>1058 Kingstown Rd, Wakefield, RI 02879</p>
+                <p>Phone: (401) 789-1553 | Fax: (401) 782-1313</p>
+            </div>
+            <div class="text-sm text-gray-500">
+                © <span id="currentYear"></span> South County Child & Family Consultants. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuLinks = mobileMenu.querySelectorAll('.mobile-menu-link');
+
+        mobileMenuButton.addEventListener('click', () => {
+            const isHidden = mobileMenu.classList.contains('-translate-y-full');
+            if (isHidden) {
+                mobileMenu.classList.remove('-translate-y-full', 'opacity-0', '-z-10');
+                mobileMenu.classList.add('translate-y-0', 'opacity-100', 'z-40');
+                mobileMenuButton.innerHTML = '<i class="fas fa-times fa-lg"></i>';
+            } else {
+                mobileMenu.classList.add('-translate-y-full', 'opacity-0', '-z-10');
+                mobileMenu.classList.remove('translate-y-0', 'opacity-100', 'z-40');
+                mobileMenuButton.innerHTML = '<i class="fas fa-bars fa-lg"></i>';
+            }
+        });
+
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                // For internal links, close menu. For external, it will navigate anyway.
+                if (link.getAttribute('href').startsWith('#') || link.getAttribute('href').includes('index.html#')) {
+                    mobileMenu.classList.add('-translate-y-full', 'opacity-0', '-z-10');
+                    mobileMenu.classList.remove('translate-y-0', 'opacity-100', 'z-40');
+                    mobileMenuButton.innerHTML = '<i class="fas fa-bars fa-lg"></i>';
+                }
+                // For anchor links on the same page, also handle smooth scroll
+                if (link.getAttribute('href').startsWith('#') || (link.getAttribute('href').startsWith('index.html#') && window.location.pathname.endsWith('index.html'))) {
+                     // Smooth scroll logic is separate now
+                }
+            });
+        });
+
+        // Smooth scroll for anchor links (for links pointing to sections on the current page)
+        document.querySelectorAll('a[href^="#"], a[href^="index.html#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                const isSamePageAnchor = href.startsWith('#') || (href.startsWith('index.html#') && window.location.pathname.endsWith('/index.html') || window.location.pathname === '/');
+                
+                if (isSamePageAnchor) {
+                    e.preventDefault();
+                    const targetId = href.startsWith('#') ? href : href.substring(href.indexOf('#')); // Get #section-id
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        const headerOffset = 70; 
+                        const elementPosition = targetElement.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: "smooth"
+                        });
+                         // Close mobile menu if open after scroll
+                        if (!mobileMenu.classList.contains('-translate-y-full')) {
+                            mobileMenu.classList.add('-translate-y-full', 'opacity-0', '-z-10');
+                            mobileMenu.classList.remove('translate-y-0', 'opacity-100', 'z-40');
+                            mobileMenuButton.innerHTML = '<i class="fas fa-bars fa-lg"></i>';
+                        }
+                    }
+                }
+                // If it's a link to an anchor on another page, the browser will handle the jump after navigation.
+            });
+        });
+
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        const contactForm = document.querySelector('#contact form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const formData = new FormData(this);
+                const data = Object.fromEntries(formData.entries());
+                console.log('Form submitted:', data);
+                
+                const messageBox = document.createElement('div');
+                messageBox.style.position = 'fixed';
+                messageBox.style.bottom = '20px';
+                messageBox.style.left = '50%';
+                messageBox.style.transform = 'translateX(-50%)';
+                messageBox.style.padding = '15px 25px';
+                messageBox.style.backgroundColor = '#28a745';
+                messageBox.style.color = 'white';
+                messageBox.style.borderRadius = '8px';
+                messageBox.style.boxShadow = '0 4px 15px rgba(0,0,0,0.2)';
+                messageBox.style.zIndex = '1000';
+                messageBox.textContent = 'Thank you for your message! We will get back to you soon.';
+                document.body.appendChild(messageBox);
+                setTimeout(() => {
+                    messageBox.remove();
+                }, 4000);
+
+                this.reset();
+            });
+        }
+    </script>
+</body>
+</html>
